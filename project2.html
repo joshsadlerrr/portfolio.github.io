@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Driftwood — Josh Sadler</title>
+  <meta name="description" content="Driftwood project by Josh Sadler." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="mark"></span>Home</a>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <a class="back-link" href="index.html#projects">Back to projects</a>
+
+    <header class="project-header reveal">
+      <h1>Driftwood</h1>
+    </header>
+
+    <div class="project-intro-row">
+      <div class="project-intro-image reveal-left">
+        <div class="project-image-placeholder landscape">
+          <span>Project Image</span>
+        </div>
+      </div>
+      <div class="project-intro-text reveal-right">
+        <p>
+          [A short, warm summary of the project — the problem you set out to solve, the people you solved it for, and the shape of the outcome.]
+        </p>
+        <p>
+          [Add more context here — what inspired the project, what tools or methods you used, and any constraints you were working within.]
+        </p>
+      </div>
+    </div>
+
+    <section class="project-body">
+      <!-- Lessons Learned -->
+      <h2 class="reveal">Lessons Learned</h2>
+      <p class="reveal">
+        [Reflect on what this project taught you — what went well, what you'd do differently, and how it shaped your approach going forward.]
+      </p>
+
+      <h2 class="reveal">The brief</h2>
+      <p class="reveal">
+        Set the scene in two or three sentences. What was happening before this project existed? What did the team or the user need?
+      </p>
+
+      <h2 class="reveal">What I did</h2>
+      <p class="reveal">
+        Describe your specific contributions — the deliverables, decisions, and research moments that shaped the project.
+      </p>
+
+      <h2 class="reveal">Outcome</h2>
+      <p class="reveal">
+        What changed because of the work? Numbers help, but so do small, true observations.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="index.html#projects">← More projects</a> &middot; <a href="mailto:hello@example.com">hello@example.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

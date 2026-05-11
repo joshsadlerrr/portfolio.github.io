@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josh Sadler — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Josh Sadler — a quiet space for work, words, and the things I care about." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="#top" class="brand"><span class="mark"></span>Home</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li class="nav-dropdown">
+          <a href="#projects">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="project1.html">Clock Project</a></li>
+            <li><a href="project2.html">Driftwood</a></li>
+            <li><a href="project3.html">Lighthouse</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container">
+      <h1>Josh Sadler</h1>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label reveal">About</div>
+      <div class="about-row">
+        <div class="about-photo-wrap reveal-left" data-parallax="0.05">
+          <img src="IMG_0021.JPG" alt="Josh Sadler" class="about-photo" />
+          <svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true">
+            <path d="M0,24 C150,48 300,0 450,24 C600,48 750,0 900,24 C1050,48 1200,0 1200,24 L1200,48 L0,48 Z" fill="currentColor" />
+          </svg>
+        </div>
+        <div class="about-text reveal-right">
+          <p>
+            Hello, my name is Joshua Sadler and I am a Second Year Mechanical Engineering student at CSU with a Minor in Mathematics. I enjoy learning and am fascinated with how we can model and solve real world problems using math and engineering. My skills range across CAD design, composite fabrication, manual machining and coding with Arduino IDE and MATLAB.
+          </p>
+          <p>
+            In my free time I enjoy surfing, hydrofoiling, sailing and skiing. In the last year I have worked with Unifoil, a hydrofoiling company, developing product testing technology to improve hydrofoil designs. I deeply enjoy this type of engineering that connects the theoretical design to real world performance especially in sports that harness the power of the earth to function.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label reveal">Skills</div>
+      <div class="skills-grid">
+        <article class="skill-card reveal reveal-delay-1">
+          <h3>Design & Drawing</h3>
+          <p>Translating concepts into detailed engineering drawings with proper dimensioning, tolerancing, and GD&T callouts ready for manufacturing.</p>
+          <ul class="skill-tags">
+            <li>CSWA Certified</li><li>SolidWorks</li><li>Onshape</li><li>GD&T</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal reveal-delay-2">
+          <h3>Composite Manufacturing</h3>
+          <p>Hands-on experience with layup techniques, curing processes, and quality control for high-performance composite structures.</p>
+          <ul class="skill-tags">
+            <li>Vacuum Bagging</li><li>Wet Layup</li><li>Quality Control</li>
+          </ul>
+        </article>
+        <article class="skill-card reveal reveal-delay-3">
+          <h3>Machine Manufacturing</h3>
+          <p>Operating and programming CNC and manual machines to produce precision parts from raw stock to finished product.</p>
+          <ul class="skill-tags">
+            <li>CNC</li><li>Lathe</li><li>Milling</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <div class="projects-grid">
+
+        <a href="project1.html" class="project-card reveal reveal-delay-1" style="border-bottom:none;">
+          <div class="thumb">Project One</div>
+          <div class="body">
+            <h3>Clock Project</h3>
+            <p>A precision-engineered clock with detailed manufacturing drawings and full GD&T analysis.</p>
+            <span class="more">Read the case study</span>
+          </div>
+        </a>
+
+        <a href="project2.html" class="project-card reveal reveal-delay-2" style="border-bottom:none;">
+          <div class="thumb">Project Two</div>
+          <div class="body">
+            <h3>Driftwood</h3>
+            <p>A short, intriguing one-line description of the project. Hint at the problem, the audience, and the texture of the work.</p>
+            <span class="more">Read the case study</span>
+          </div>
+        </a>
+
+        <a href="project3.html" class="project-card reveal reveal-delay-3" style="border-bottom:none;">
+          <div class="thumb">Project Three</div>
+          <div class="body">
+            <h3>Lighthouse</h3>
+            <p>A short, intriguing one-line description of the project. Hint at the problem, the audience, and the texture of the work.</p>
+            <span class="more">Read the case study</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label reveal">Contact</div>
+      <p class="reveal">
+        I'm always open to new opportunities, collaborations, or just a good conversation. Feel free to reach out.
+      </p>
+      <div class="contact-links reveal">
+        <a href="mailto:jrsmahalo@gmail.com" class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">jrsmahalo@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/joshua-sadler-0aab44305/" class="contact-item">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">View Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Josh Sadler &middot; <a href="mailto:jrsmahalo@gmail.com">jrsmahalo@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // --- Scroll reveal (IntersectionObserver) ---
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    // --- Parallax on scroll ---
+    const heroBg = document.querySelector('.hero-bg');
+    const nav = document.querySelector('.nav');
+    const parallaxEls = document.querySelectorAll('[data-parallax]');
+
+    function onScroll() {
+      const scrollY = window.scrollY;
+
+      // Hero background parallax — moves slower than scroll
+      if (heroBg) {
+        heroBg.style.transform = `translateY(${scrollY * 0.4}px)`;
+      }
+
+      // Nav shadow on scroll
+      if (nav) {
+        nav.classList.toggle('scrolled', scrollY > 60);
+      }
+
+      // Subtle parallax on marked elements
+      parallaxEls.forEach(el => {
+        const rate = parseFloat(el.dataset.parallax) || 0.05;
+        const rect = el.getBoundingClientRect();
+        const offset = (rect.top - window.innerHeight / 2) * rate;
+        el.style.transform = `translateY(${offset}px)`;
+      });
+    }
+
+    // Use requestAnimationFrame for smooth performance
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          onScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
+
+    // Run once on load
+    onScroll();
+  </script>
+</body>
+</html>
