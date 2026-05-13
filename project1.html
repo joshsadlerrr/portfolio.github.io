@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clock Project — Josh Sadler</title>
+  <meta name="description" content="Clock Project — engineering drawings, GD&T analysis, and precision manufacturing." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="mark"></span>Home</a>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#projects">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="project1.html">Clock Project</a></li>
+            <li><a href="project2.html">Screw Driver Project</a></li>
+            <li><a href="project3.html">Foil Board Project</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <a class="back-link" href="index.html#projects">Back to projects</a>
+
+    <header class="project-header reveal">
+      <h1>Clock Project</h1>
+    </header>
+
+    <!-- Hero row: image + description side by side -->
+    <div class="project-intro-row">
+      <div class="project-intro-image reveal-left">
+        <img src="assembled clock.JPG" alt="Fully assembled precision-engineered clock" class="project-hero-img" />
+      </div>
+      <div class="project-intro-text reveal-right">
+        <p>
+          The Clock Project was done for my MECH 200B machining lab and Colorado State University. This project had us using, manual lathes, manual mills, laser cutters, cnc mills, and finishing steps to create a clock that had pen and pencil holders. The project gave us experience in taking engineering drawings and turning them into real world, properly toleranced parts and gave me insight into the challenges of manufacturing that is critical for accurate and realistic part creation and design.
+        </p>
+      </div>
+    </div>
+
+    <section class="project-body">
+      <!-- Lessons Learned -->
+      <h2 class="reveal">Lessons Learned</h2>
+      <div class="lessons-row">
+        <p class="reveal">
+          The most challenging part of the project was machining the parts to the proper tolerance and then maintaining the tolerance through the finishing process. This was most apparent with the aluminum clock base. Being the biggest part it was quite difficult to get the part to the correct tolerance in the milling step because the all the large calipers that were necessary to measure it were inaccurate. Then after wards the 4 edges and top had to be sanded to a 600 grit finish. The first time I did this it caused be to sand my length dimension out of tolerance so I had to restart the clock base. Overall, this project taught me to take lots of measurements and take my time. By taking my time and taking each step more carefully my second attempt on the clock base was in tolerance and I even made quicker than my first. This may seem unintuitive but by being more careful and thinking hard about each step I was able to do the whole part more efficiently and effectively.
+        </p>
+        <div class="lessons-slideshow reveal-right">
+          <img src="aluminumpart.JPG" alt="Machined aluminum clock base" class="slideshow-img active" />
+          <img src="brasspart.JPG" alt="Machined brass pen holder part" class="slideshow-img" />
+          <img src="Steel Part.JPG" alt="Machined steel pencil holder part" class="slideshow-img" />
+          <button class="slide-arrow slide-prev" aria-label="Previous image">&#8249;</button>
+          <button class="slide-arrow slide-next" aria-label="Next image">&#8250;</button>
+        </div>
+      </div>
+
+      <!-- Drawings Section -->
+      <h2 class="reveal">Drawings</h2>
+      <p class="reveal">
+        The engineering drawings below detail each component of the clock assembly. Every part was drafted with proper dimensioning, tolerancing, and standard views to communicate manufacturing intent clearly.
+      </p>
+
+      <div class="drawings-stack">
+        <div class="drawing-slot reveal">
+          <h3 class="drawing-title">Clock Base</h3>
+          <img src="clock-base-drawing.png" alt="Clock Base engineering drawing with dimensions and GD&T callouts" class="drawing-img" />
+        </div>
+        <div class="drawing-slot reveal">
+          <h3 class="drawing-title">Pen Holder</h3>
+          <img src="pen-holder-drawing.png" alt="Pen Holder engineering drawing with dimensions and GD&T callouts" class="drawing-img" />
+        </div>
+        <div class="drawing-slot reveal">
+          <h3 class="drawing-title">Pencil Holder</h3>
+          <img src="pencil-holder-drawing.png" alt="Pencil Holder engineering drawing with dimensions and GD&T callouts" class="drawing-img" />
+        </div>
+      </div>
+
+      <!-- GD&T Section -->
+      <h2 class="reveal">GD&T Analysis</h2>
+      <p class="reveal">
+        Geometric Dimensioning and Tolerancing was applied throughout this project to ensure proper form, fit, and function of each clock component. Below is a breakdown of the GD&T applied to each part.
+      </p>
+
+      <h3 class="gdt-part-heading reveal">Clock Base</h3>
+      <div class="gdt-section reveal">
+        <h3>Functional Requirements</h3>
+        <p>
+          For the clock base to be successful, it must be flat on the top so that the pen and pencil can rest flat against the top, the four side edges must be square to each other, and the spacing of the holes must be correct to fit onto the CNC jig to machine the slot. This gives us three main functional requirements for the clock base.
+        </p>
+      </div>
+      <div class="gdt-section reveal">
+        <h3>Datum Structure</h3>
+        <p>
+          <strong>Datum A:</strong> The bottom of the clock base, with a flatness callout to ensure the part is properly flat.
+        </p>
+        <p>
+          <strong>Datum B:</strong> The left edge, with a callout that it is perpendicular to Datum A. This was chosen as the secondary datum because the horizontal distance between the holes is critical — this datum is used to locate the holes.
+        </p>
+        <p>
+          <strong>Datum C:</strong> The front edge of the clock base, with a callout that it is perpendicular to Datums A and B. This was chosen as the tertiary datum to locate the vertical position of the holes, which is less critical than their horizontal position.
+        </p>
+      </div>
+      <div class="gdt-section reveal">
+        <h3>Tolerancing</h3>
+        <p>
+          A parallelism feature was applied to the top face to make it parallel to Datum A within 0.003″. This tighter-than-general tolerance was chosen because the top is a mating surface and needs to be accurate.
+        </p>
+        <p>
+          Parallelism features were also applied to the side faces opposite Datums B and C to ensure opposite faces are parallel to each other, again within 0.003″, keeping the entire part square to itself.
+        </p>
+        <p>
+          For the holes, a position callout with a diametric tolerance zone of 0.005″ was used, paired with basic dimensions to locate them. The 0.005″ tolerance was chosen because that is the maximum deviation before the base no longer fits on the CNC mounting jig.
+        </p>
+      </div>
+
+      <h3 class="gdt-part-heading reveal">Pen Holder</h3>
+      <div class="gdt-section reveal">
+        <h3>Functional Requirements</h3>
+        <p>
+          For the pen holder to be successful, it must hold a pen securely and concentrically in the drilled hole, the threaded end must engage correctly with its mating part, and the drilled hole must be accurately positioned along the central axis. This gives us three main functional requirements for the pen holder.
+        </p>
+      </div>
+      <div class="gdt-section reveal">
+        <h3>Datum Structure</h3>
+        <p>
+          <strong>Datum A:</strong> The outer diameter of the pen holder, which establishes the central axis of the part. This was chosen as the primary datum because all features — including the drilled hole, thread, and end face — must be concentric or perpendicular to this axis.
+        </p>
+        <p>
+          <strong>Datum B:</strong> The end face of the pen holder, with a perpendicularity callout to Datum A. This was chosen as the secondary datum because it establishes the axial origin from which the drilled hole depth and thread start position are measured.
+        </p>
+        <p>
+          <strong>Datum C:</strong> The flat face at the thread start, controlled with a profile callout relative to A and B. This was chosen as the tertiary datum because it clocks the rotational orientation of the part, constraining the one remaining degree of freedom left open by A and B.
+        </p>
+      </div>
+      <div class="gdt-section reveal">
+        <h3>Tolerancing</h3>
+        <p>
+          A cylindricity callout of 0.003″ was applied to the outer diameter to ensure Datum A is a true, well-formed cylinder. This tight tolerance was chosen because the OD is the primary datum and any deviation directly affects how accurately all other features are located.
+        </p>
+        <p>
+          A profile callout of 0.010″ was applied to the Ø0.625 OD relative to Datums A and B, ensuring the outer surface maintains its true position and defining the part length through a basic dimension.
+        </p>
+        <p>
+          For the drilled hole, a position callout of 0.003″ relative to A and B ensures the Ø0.50 bore is concentric with the outer diameter so a pen sits centered and does not rock or bind inside the holder.
+        </p>
+        <p>
+          A profile callout of 0.010″ was applied to the threaded end length relative to A and B, allowing the thread end to deviate a maximum of 0.005″ on either side. A 0.005″ concentricity callout on the 0.370″ thread diameter ensures alignment with the central axis. A 0.003″ true position callout relative to A was also applied to the drilled hole to keep it properly centered, with the drill depth called out with its associated tolerance.
+        </p>
+      </div>
+
+      <h3 class="gdt-part-heading reveal">Pencil Holder</h3>
+      <div class="gdt-section reveal">
+        <h3>Functional Requirements</h3>
+        <p>
+          For the pencil holder to be successful, it must hold a pencil securely and concentrically in the drilled hole, the threaded hole must engage correctly with its mating part, and the drilled hole must be accurately positioned along the central axis. This gives us three main functional requirements for the pencil holder.
+        </p>
+      </div>
+      <div class="gdt-section reveal">
+        <h3>Datum Structure</h3>
+        <p>
+          <strong>Datum A:</strong> The outer diameter of the pencil holder, which establishes the central axis of the part. This was chosen as the primary datum because all features — including the drilled hole, thread, and end face — must be concentric or perpendicular to this axis.
+        </p>
+        <p>
+          <strong>Datum B:</strong> The end face of the pencil holder, with a perpendicularity callout to Datum A. This was chosen as the secondary datum because it establishes the axial origin from which the drilled hole depth and thread start position are measured.
+        </p>
+        <p>
+          <strong>Datum C:</strong> The flat face at the thread start, controlled with a profile callout relative to A and B. This was chosen as the tertiary datum because it clocks the rotational orientation of the part, constraining the one remaining degree of freedom left open by A and B.
+        </p>
+      </div>
+      <div class="gdt-section reveal">
+        <h3>Tolerancing</h3>
+        <p>
+          A cylindricity callout of 0.003″ was applied to the outer diameter to ensure Datum A is a true, well-formed cylinder. This tight tolerance was chosen because the OD is the primary datum and any deviation directly affects how accurately all other features are located.
+        </p>
+        <p>
+          A profile callout of 0.010″ was applied to the left face relative to Datums A and B, ensuring the left edge maintains its true position and defining the part length.
+        </p>
+        <p>
+          A concentricity callout of 0.003″ relative to A ensures the Ø0.500 drilled hole is concentric with the outer diameter, which is important so the hole stays within the OD.
+        </p>
+        <p>
+          A profile callout of 0.010″ was applied to the threaded end length relative to A and B, allowing the thread end to deviate a maximum of 0.005″ on either side. A 0.003″ concentricity callout on the 0.500″ drilled hole diameter ensures alignment with the central axis. For the threaded hole, a 0.003″ true position callout with a diametric tolerance zone relative to Datum A ensures the ¼-20 UNC threaded hole engages smoothly with its mating fastener without cross-threading.
+        </p>
+      </div>
+
+      <!-- Cost Estimate -->
+      <h2 class="reveal">Cost Estimate</h2>
+      <p class="reveal">
+        The following is the cost estimate for one completed clock manufactured on manual machines.
+      </p>
+      <div class="cost-table-wrapper reveal">
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Item / Operation</th>
+              <th>Quantity / Time</th>
+              <th>Rate / Unit Cost</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Material</td>
+              <td>Aluminum 6061-T6 (Base Block)</td>
+              <td>1 unit</td>
+              <td>$8.50</td>
+              <td>$8.50</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Brass Round Stock (Standoffs)</td>
+              <td>4 inches</td>
+              <td>$1.00/inch</td>
+              <td>$4.00</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Steel Round Stock (Pen Holder)</td>
+              <td>4 inches</td>
+              <td>$0.75/inch</td>
+              <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Clock Mechanism &amp; Hands</td>
+              <td>1 unit</td>
+              <td>$5.00</td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Fasteners (Screws, Washers)</td>
+              <td>1 set</td>
+              <td>$2.50</td>
+              <td>$2.50</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Felt Feet</td>
+              <td>1 set</td>
+              <td>$0.50</td>
+              <td>$0.50</td>
+            </tr>
+            <tr class="subtotal-row">
+              <td>Subtotal</td>
+              <td>Raw Materials</td>
+              <td></td>
+              <td></td>
+              <td>$23.50</td>
+            </tr>
+            <tr>
+              <td>Labor</td>
+              <td>Machinist Labor (CO Average)</td>
+              <td>8.0 hours</td>
+              <td>$28.00/hr</td>
+              <td>$224.00</td>
+            </tr>
+            <tr class="grand-total-row">
+              <td>GRAND TOTAL</td>
+              <td>Single Unit Production</td>
+              <td></td>
+              <td></td>
+              <td>$247.50</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Efficiency Improvement Proposal -->
+      <h2 class="reveal">Efficiency Improvement Proposal</h2>
+      <p class="reveal">
+        Manual machining processes are great for prototyping but, if we want to expand to the mass production of ten thousand units were are going to need to make efficiency improvements to cut down on cycle time and labor costs. In order to accomplish these goals I propose that we transition to CNC mills and lathes for our machines. By utilizing tool pathing and tool changes that the CNC machines unlock we eliminate the need to manually position using the Digital Read Out and doing manual tool changes. We could also utilize custom work fixturing like soft jaws in order to hold multiple clock bases in order to reduce our "spindle idle time". By utilizing CNC machining and other tricks to increase efficiency we can make parts for cheaper, with tighter tolerances, faster than ever before.
+      </p>
+
+      <!-- Mass Production Analysis -->
+      <h2 class="reveal">Mass Production Analysis (10,000 Units)</h2>
+      <p class="reveal">
+        To scale up production of the clock to 10,000 units we need to take advantage of economies of scale in material purchasing and the huge reduction in cycle times that come with automated CNC processes. For this estimate I'm leaving out labor costs to focus purely on material scaling and machine time overhead as requested by the project constraints.
+        </p>
+        <p class="reveal">
+          By ordering the raw aluminum, brass, and steel in bulk we can assume a 20% reduction in raw material costs from the single unit prototype phase. This bulk discount brings the raw material cost down to $18.40 per unit which totals $184,000 for the entire production run. On top of that we need to factor in about $0.50 per unit for CNC tooling and consumables which adds $5,000 to the budget. That brings the total mass production cost for 10,000 units to $189,000 excluding labor.
+        </p>
+        <p class="reveal">
+          The manufacturing time comparison between manual and automated is where things get really interesting. The manual mill and gear head lathe required about 5 hours of machining time per unit. If we tried to scale that manually for 10,000 units we'd need over 50,000 hours of continuous work. By switching to an automated CNC process we can cut the cycle time down to about 15 minutes per unit. Producing 10,000 units at that speed would only take 2,500 hours of machine time which condenses the timeline to roughly 62.5 standard work weeks. That completely eliminates the production bottleneck.
+        </p>
+        <p class="reveal">
+          Trying to mass produce 10,000 units using the manual processes we started with is just not viable. The transition to CNC automation is absolutely necessary for commercial scaling. It compresses what would be a prohibitively long manual project into a realistic timeline while also lowering per unit material costs through bulk purchasing.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="index.html#projects">← More projects</a> &middot; <a href="mailto:jrsmahlo@gmail.com">jrsmahlo@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Lessons slideshow
+    const slides = document.querySelectorAll('.slideshow-img');
+    let current = 0;
+    let timer;
+    function goToSlide(n) {
+      slides[current].classList.remove('active');
+      current = ((n % slides.length) + slides.length) % slides.length;
+      slides[current].classList.add('active');
+    }
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => goToSlide(current + 1), 6000);
+    }
+    document.querySelector('.slide-prev').addEventListener('click', () => { goToSlide(current - 1); resetTimer(); });
+    document.querySelector('.slide-next').addEventListener('click', () => { goToSlide(current + 1); resetTimer(); });
+    resetTimer();
+  </script>
+</body>
+</html>

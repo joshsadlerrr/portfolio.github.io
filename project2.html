@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Screw Driver Project — Josh Sadler</title>
+  <meta name="description" content="Screw Driver Project project by Josh Sadler." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="nav" aria-label="Primary">
+    <div class="nav-inner">
+      <a href="index.html" class="brand"><span class="mark"></span>Home</a>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li class="nav-dropdown">
+          <a href="index.html#projects">Projects</a>
+          <ul class="dropdown-menu">
+            <li><a href="project1.html">Clock Project</a></li>
+            <li><a href="project2.html">Screw Driver Project</a></li>
+            <li><a href="project3.html">Foil Board Project</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <a class="back-link" href="index.html#projects">Back to projects</a>
+
+    <header class="project-header reveal">
+      <h1>Screw Driver Project</h1>
+    </header>
+
+    <div class="project-intro-row">
+      <div class="project-intro-image reveal-left">
+        <img src="screwdrivers.JPG" alt="Completed screwdrivers" class="project-hero-img" />
+      </div>
+      <div class="project-intro-text reveal-right">
+        <p>
+          The screwdriver project is a project I did for my MECH 200B lab course. For this project we made a cast aluminum screw driver on a manual and CNC mill with diamond knurling and a heat treated flat head tip. For the finish of the screw driver I sanded the handle to 600 grit and then sandblasted the whole thing. After sandblasting, I ran the screwdriver on the wire wheel which gave it a very unique shiny but textured finish that I am very proud of. We also made an injection molded Philips head screwdriver using the injection molding machine in the EMEC. The project gave me experience in CNC lathe use, knurling, drop forging, and heat treatment.
+        </p>
+      </div>
+    </div>
+
+    <section class="project-body">
+      <!-- Lessons Learned -->
+      <h2 class="reveal">Lessons Learned</h2>
+      <div class="lessons-row">
+        <p class="reveal">
+          The most challenging part of the screwdriver was shaping the tip into the correct shape within tolerances and properly heat treating. Much like the clock project, I found that by removing small amounts of material from the tip and taking measurements often it was much easier. By doing so, I was slowly approaching the correct dimensions so that I wouldn't overshoot the desired size. The hardest part of heat treatment was getting the metal at the tip to be the right temp. Before attempting to heat treat my part I watched a few of my peers first so that I could see the timing and what correct heat treatment looked like. This technique was very effective and made it so I successfully heat treated my screw driver on my first attempt.
+        </p>
+        <div class="lessons-slideshow reveal-right">
+          <img src="Al screwdriver.JPG" alt="Aluminum screwdriver" class="slideshow-img active" />
+          <img src="PLA screwdriver.JPG" alt="PLA screwdriver" class="slideshow-img" />
+          <button class="slide-arrow slide-prev" aria-label="Previous image">&#8249;</button>
+          <button class="slide-arrow slide-next" aria-label="Next image">&#8250;</button>
+        </div>
+      </div>
+
+      <!-- Cost Estimate -->
+      <h2 class="reveal">Cost Estimate</h2>
+      <p class="reveal">
+        The following is the cost estimate for one completed screwdriver set manufactured on manual machines.
+      </p>
+      <div class="cost-table-wrapper reveal">
+        <table class="cost-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Item / Operation</th>
+              <th>Quantity / Time</th>
+              <th>Rate / Unit Cost</th>
+              <th>Total Cost</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Material</td>
+              <td>High Carbon Steel</td>
+              <td>1 unit</td>
+              <td>$1.50</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Cast Aluminum Handle</td>
+              <td>1 unit</td>
+              <td>$1.50</td>
+              <td>$1.50</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Thermoplastic Pellets</td>
+              <td>1 unit</td>
+              <td>$0.50</td>
+              <td>$0.50</td>
+            </tr>
+            <tr>
+              <td>Material</td>
+              <td>Phillips Shank</td>
+              <td>1 unit</td>
+              <td>$1.50</td>
+              <td>$1.50</td>
+            </tr>
+            <tr class="subtotal-row">
+              <td>Subtotal</td>
+              <td>Raw Materials</td>
+              <td></td>
+              <td></td>
+              <td>$5.00</td>
+            </tr>
+            <tr>
+              <td>Labor</td>
+              <td>Machinist Labor (CO Average)</td>
+              <td>3.0 hours</td>
+              <td>$28.00/hr</td>
+              <td>$84.00</td>
+            </tr>
+            <tr class="grand-total-row">
+              <td>GRAND TOTAL</td>
+              <td>Single Unit Production</td>
+              <td></td>
+              <td></td>
+              <td>$89.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Efficiency Improvement Proposal -->
+      <h2 class="reveal">Efficiency Improvement Proposal</h2>
+      <p class="reveal">
+        The manual processes we used in the EMEC lab are great for learning, but if we want to scale up, we need to rethink how we make these parts. For the flathead screwdriver, I would move the steel shank over to a progressive die stamping line and switch the handle to high pressure die casting. For the Phillips screwdriver, I would use a multi cavity injection molding setup so we can pump out multiple handles per cycle instead of one at a time.
+      </p>
+      <p class="reveal">
+        The reason these changes matter is speed and consistency. Progressive die stamping lets the material flow through a series of stations that form it automatically, so there is no more hand shaping one piece at a time. Die casting gets us near final shape handles straight out of the mold, which cuts way down on finishing work. And with multi cavity injection molding, we are filling several molds at once per cycle, so the output per hour goes way up while the cost per part drops.
+      </p>
+
+      <!-- Mass Production Analysis -->
+      <h2 class="reveal">Mass Production Analysis (10,000 Units)</h2>
+      <p class="reveal">
+        When we look at making 10,000 sets, the whole game changes. Buying steel, aluminum, and plastic in bulk gets us about a 20% discount on materials, bringing it down to around $4.00 per set. Throw in about $1.00 per set for molds, dies, and tooling wear, and the total comes out to roughly $50,000 for the whole run, not counting labor.
+      </p>
+      <p class="reveal">
+        The time savings are where it really gets interesting. In the lab, one set took about 3 hours, which means 10,000 sets would take over 30,000 hours by hand. Once we switch to automated die casting and injection molding, the cycle time drops to around 45 seconds per set. That puts the entire production run at about 125 hours of machine time, turning what would have been a prohibitively long manual effort into a few weeks of work.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p><a href="index.html#projects">← More projects</a> &middot; <a href="mailto:jrsmahlo@gmail.com">jrsmahlo@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(el => observer.observe(el));
+
+    // Lessons slideshow
+    const slides = document.querySelectorAll('.slideshow-img');
+    let current = 0;
+    let timer;
+    function goToSlide(n) {
+      slides[current].classList.remove('active');
+      current = ((n % slides.length) + slides.length) % slides.length;
+      slides[current].classList.add('active');
+    }
+    function resetTimer() {
+      clearInterval(timer);
+      timer = setInterval(() => goToSlide(current + 1), 6000);
+    }
+    document.querySelector('.slide-prev').addEventListener('click', () => { goToSlide(current - 1); resetTimer(); });
+    document.querySelector('.slide-next').addEventListener('click', () => { goToSlide(current + 1); resetTimer(); });
+    resetTimer();
+  </script>
+</body>
+</html>
